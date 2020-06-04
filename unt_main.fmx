@@ -1,0 +1,124 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 480
+  ClientWidth = 320
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object ToolBar1: TToolBar
+    Align = Bottom
+    Position.Y = 432.000000000000000000
+    Size.Width = 320.000000000000000000
+    Size.Height = 48.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object SpeedButton1: TSpeedButton
+      Align = Left
+      Size.Width = 73.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'priortoolbutton'
+      Text = 'SpeedButton1'
+      OnClick = SpeedButton1Click
+    end
+    object SpeedButton2: TSpeedButton
+      Align = Right
+      Position.X = 247.000000000000000000
+      Size.Width = 73.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'nexttoolbuttonbordered'
+      Text = 'SpeedButton1'
+      OnClick = SpeedButton2Click
+    end
+  end
+  object Layout1: TLayout
+    Align = Center
+    Size.Width = 282.000000000000000000
+    Size.Height = 282.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object Rectangle1: TRectangle
+      Align = Client
+      Fill.Kind = None
+      Size.Width = 282.000000000000000000
+      Size.Height = 282.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Thickness = 5.000000000000000000
+      object Rectangle2: TRectangle
+        Align = Top
+        Fill.Kind = Gradient
+        Fill.Gradient.Points = <
+          item
+            Color = xFF0795D5
+            Offset = 0.000000000000000000
+          end
+          item
+            Color = xFF80CCFA
+            Offset = 0.996894419193267800
+          end>
+        Fill.Gradient.StartPosition.X = 0.500000000000000000
+        Fill.Gradient.StartPosition.Y = 1.000000000000000000
+        Fill.Gradient.StopPosition.X = 0.499999970197677600
+        Fill.Gradient.StopPosition.Y = 0.000000000000000000
+        Size.Width = 282.000000000000000000
+        Size.Height = 209.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Kind = None
+        object player: TRectangle
+          Position.X = 15.000000000000000000
+          Position.Y = 175.000000000000000000
+          Size.Width = 33.000000000000000000
+          Size.Height = 34.000000000000000000
+          Size.PlatformDefault = False
+        end
+        object obstaculo: TRectangle
+          Fill.Color = xFFF01E1E
+          Position.X = 150.000000000000000000
+          Position.Y = 175.000000000000000000
+          Size.Width = 33.000000000000000000
+          Size.Height = 34.000000000000000000
+          Size.PlatformDefault = False
+        end
+      end
+      object Rectangle3: TRectangle
+        Align = Client
+        Fill.Kind = Gradient
+        Fill.Gradient.Points = <
+          item
+            Color = xFF036618
+            Offset = 0.006211180239915848
+          end
+          item
+            Color = xFF06E42C
+            Offset = 0.987577617168426500
+          end>
+        Fill.Gradient.StartPosition.X = 0.500000000000000000
+        Fill.Gradient.StartPosition.Y = 1.000000000000000000
+        Fill.Gradient.StopPosition.X = 0.499999970197677600
+        Fill.Gradient.StopPosition.Y = 0.000000000000000000
+        Size.Width = 282.000000000000000000
+        Size.Height = 73.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Kind = None
+        object Rectangle4: TRectangle
+          Align = Top
+          Fill.Color = xFFB55904
+          Size.Width = 282.000000000000000000
+          Size.Height = 9.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+        end
+      end
+    end
+  end
+  object OnUpdateGame: TTimer
+    Interval = 5000
+    OnTimer = OnUpdateGameTimer
+    Left = 216
+    Top = 96
+  end
+end
